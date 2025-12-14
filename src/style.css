@@ -1,0 +1,98 @@
+:root {
+  --white: #fcfbfb;
+  --black: #121213;
+  --red: #ff6464;
+  --heading-font: 'Fascinate', system-ui;
+  --body-font: 'Mulish', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-style: normal;
+  background: var(--white);
+  color: var(--black);
+}
+
+nav {
+  position: relative;
+  background: var(--black);
+  color: var(--white);
+}
+
+nav h1 {
+  margin: 0;
+  padding: 1rem 0;
+  font-family: var(--heading-font);
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+.intro {
+  max-width: 95vw;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.intro p {
+  font-family: var(--body-font);
+  font-style: italic;
+}
+
+.intro_text {
+  font-family: var(--body-font);
+}
+
+.intro_img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid var(--black);
+}
+
+.animated-text {
+  overflow: hidden;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.animated-text_inner {
+  display: flex;
+}
+
+.animated-text_line {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 10px 15px;
+  min-width: 100%;
+  font-family: var(--heading-font);
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* .options {
+  background-image: url('./assets/bg-img.png');
+  width: 100vh;
+} */
