@@ -1,270 +1,218 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
-            rel="stylesheet"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
 
-        <!-- OG tags -->
-        <meta property="og:title" content="Photography Portfolio" />
-        <meta
-            property="og:description"
-            content="Fragments of beauty and chaos."
-        />
-        <meta property="og:image" content="#" />
-        <meta property="og:url" content="add website address here" />
-        <meta property="og:type" content="description" />
+    <!-- OG tags -->
+    <meta property="og:title" content="Photography Portfolio" />
+    <meta property="og:description" content="Fragments of beauty and chaos." />
+    <meta
+      property="og:image"
+      content="https://nym-photofolio.codelabz.one/assets/phf-photos/9.jpg"
+    />
+    <meta property="og:url" content="https://nym-photofolio.codelabz.one/" />
+    <meta property="og:type" content="Photography portfolio" />
 
-        <!-- Favicon -->
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="favicon-16x16.png"
-        />
-        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-        <title>Not Your Muse | Photofolio</title>
-    </head>
-    <body>
-        <div id="page">
-            <nav>
-                <h1>Not Your Muse</h1>
-                <div class="nav-content">
-                    <a href="/">portfolio</a>
-                    <a href="about.html">about</a>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-81Z79WX876"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
 
-                    <!-- Instagram -->
-                    <a
-                        href="https://www.instagram.com/noty0urmuse/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><svg
-                            width="18"
-                            height="18"
-                            viewBox="0 0 18 18"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M5.22 0H12.78C15.66 0 18 2.34 18 5.22V12.78C18 14.1644 17.45 15.4922 16.4711 16.4711C15.4922 17.45 14.1644 18 12.78 18H5.22C2.34 18 0 15.66 0 12.78V5.22C0 3.83557 0.549963 2.50784 1.5289 1.5289C2.50784 0.549963 3.83557 0 5.22 0ZM5.04 1.8C4.1807 1.8 3.35659 2.14136 2.74897 2.74897C2.14136 3.35659 1.8 4.1807 1.8 5.04V12.96C1.8 14.751 3.249 16.2 5.04 16.2H12.96C13.8193 16.2 14.6434 15.8586 15.251 15.251C15.8586 14.6434 16.2 13.8193 16.2 12.96V5.04C16.2 3.249 14.751 1.8 12.96 1.8H5.04ZM13.725 3.15C14.0234 3.15 14.3095 3.26853 14.5205 3.4795C14.7315 3.69048 14.85 3.97663 14.85 4.275C14.85 4.57337 14.7315 4.85952 14.5205 5.07049C14.3095 5.28147 14.0234 5.4 13.725 5.4C13.4266 5.4 13.1405 5.28147 12.9295 5.07049C12.7185 4.85952 12.6 4.57337 12.6 4.275C12.6 3.97663 12.7185 3.69048 12.9295 3.4795C13.1405 3.26853 13.4266 3.15 13.725 3.15ZM9 4.5C10.1935 4.5 11.3381 4.97411 12.182 5.81802C13.0259 6.66193 13.5 7.80653 13.5 9C13.5 10.1935 13.0259 11.3381 12.182 12.182C11.3381 13.0259 10.1935 13.5 9 13.5C7.80653 13.5 6.66193 13.0259 5.81802 12.182C4.97411 11.3381 4.5 10.1935 4.5 9C4.5 7.80653 4.97411 6.66193 5.81802 5.81802C6.66193 4.97411 7.80653 4.5 9 4.5ZM9 6.3C8.28392 6.3 7.59716 6.58446 7.09081 7.09081C6.58446 7.59716 6.3 8.28392 6.3 9C6.3 9.71608 6.58446 10.4028 7.09081 10.9092C7.59716 11.4155 8.28392 11.7 9 11.7C9.71608 11.7 10.4028 11.4155 10.9092 10.9092C11.4155 10.4028 11.7 9.71608 11.7 9C11.7 8.28392 11.4155 7.59716 10.9092 7.09081C10.4028 6.58446 9.71608 6.3 9 6.3Z"
-                                fill="#121213"
-                            />
-                        </svg>
-                    </a>
+      gtag('config', 'G-81Z79WX876')
+    </script>
 
-                    <!-- Mail -->
-                    <a href="#" class="email-icon" data-email=""
-                        ><svg
-                            width="22"
-                            height="18"
-                            viewBox="0 0 22 18"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M2.2 18C1.595 18 1.07727 17.7799 0.6468 17.3396C0.216333 16.8994 0.000733333 16.3695 0 15.75V2.25C0 1.63125 0.2156 1.10175 0.6468 0.6615C1.078 0.22125 1.59573 0.00075 2.2 0H19.8C20.405 0 20.9231 0.2205 21.3543 0.6615C21.7855 1.1025 22.0007 1.632 22 2.25V15.75C22 16.3687 21.7848 16.8986 21.3543 17.3396C20.9238 17.7806 20.4057 18.0007 19.8 18H2.2ZM19.8 4.5L11.5775 9.75937C11.4858 9.81562 11.3898 9.858 11.2893 9.8865C11.1888 9.915 11.0924 9.92887 11 9.92812C10.9076 9.92737 10.8115 9.9135 10.7118 9.8865C10.6121 9.8595 10.5156 9.81712 10.4225 9.75937L2.2 4.5V15.75H19.8V4.5ZM11 7.875L19.8 2.25H2.2L11 7.875ZM2.2 4.78125V3.12187V3.15V3.1365V4.78125Z"
-                                fill="#121213"
-                            />
-                        </svg>
-                    </a>
+    <title>Not Your Muse | Photofolio</title>
+  </head>
+  <body>
+    <div id="page">
+      <nav>
+        <h1>Not Your Muse</h1>
+        <div class="nav-content">
+          <a href="/">portfolio</a>
+          <a href="about.html">about</a>
 
-                    <!-- Kofi -->
-                    <a
-                        href="https://ko-fi.com/notyourmuse"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><svg
-                            width="23"
-                            height="18"
-                            viewBox="0 0 23 18"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M10.878 0C8.29054 0 6.09979 0.0242326 4.33262 0.252019C1.99142 0.552504 0 2.36414 0 5.71405C0 9.11244 0.174417 11.6559 1.51896 13.9464C3.03696 16.5645 5.57558 18 8.86171 18H9.65712C13.6907 18 15.8805 15.8346 16.9759 14.1228C17.4247 13.419 17.7765 12.6565 18.0215 11.8565C20.884 11.6055 23 9.21325 23 6.2937V5.89144C23 2.7441 20.9587 0.553474 17.4493 0.201616C15.9562 0.0504041 14.9097 0 10.878 0ZM10.878 1.88724C14.9107 1.88724 15.756 1.93764 17.1753 2.06365C19.6899 2.3651 21.1332 3.59903 21.1332 5.94087V6.3189C21.1332 8.40872 19.4158 10.0449 17.4244 10.0449H16.5284L16.3789 10.674C16.1795 11.6559 15.8067 12.4362 15.3832 13.1418C14.512 14.526 12.9442 16.1118 9.70792 16.1118H8.93646C6.47258 16.1118 4.30675 15.2559 3.11171 13.0149C2.06712 11.0763 1.86779 8.9874 1.86779 5.73926C1.86779 3.6252 2.68908 2.44168 4.75429 2.13926C6.22342 1.91341 8.165 1.88724 10.878 1.88724ZM17.1523 4.10404C16.7536 4.10404 16.5293 4.33086 16.5293 4.63328V7.47819C16.5293 7.77964 16.7536 8.00646 17.1523 8.00646C18.4211 8.00646 19.1178 7.27561 19.1178 6.06785C19.1178 4.8601 18.4211 4.10404 17.1513 4.10404M7.19421 4.28045C5.45196 4.28045 4.30675 5.71502 4.30675 7.32601C4.30675 8.81195 5.129 10.0953 6.17454 11.1034C6.87125 11.7829 7.96662 12.4885 8.71317 12.9412C8.93149 13.073 9.18101 13.1426 9.43527 13.1426C9.68953 13.1426 9.93906 13.073 10.1574 12.9412C10.9049 12.4885 11.9993 11.7829 12.6711 11.1034C13.7415 10.0963 14.5628 8.81195 14.5628 7.32601C14.5628 5.71502 13.3678 4.28045 11.6505 4.28045C10.6298 4.28045 9.93313 4.80872 9.40988 5.53861C8.93742 4.80872 8.21579 4.28045 7.19421 4.28045Z"
-                                fill="#121213"
-                            />
-                        </svg>
-                    </a>
-                </div>
-            </nav>
-            <main class="gallery" id="gallery">
-                <button
-                    class="card"
-                    data-full="/assets/phf-photos/1.jpg"
-                    aria-label="Open photo 1"
-                >
-                    <img
-                        src="/assets/phf-photos/1.jpg"
-                        alt="Photo 1"
-                        loading="lazy"
-                    />
-                </button>
-
-                <button
-                    class="card"
-                    data-full="/assets/phf-photos/2.jpg"
-                    aria-label="Open photo 2"
-                >
-                    <img
-                        src="/assets/phf-photos/2.jpg"
-                        alt="Photo 2"
-                        loading="lazy"
-                    />
-                </button>
-
-                <button
-                    class="card"
-                    data-full="/assets/phf-photos/3.jpg"
-                    aria-label="Open photo 3"
-                >
-                    <img
-                        src="/assets/phf-photos/3.jpg"
-                        alt="Photo 3"
-                        loading="lazy"
-                    />
-                </button>
-
-                <button
-                    class="card"
-                    data-full="/assets/phf-photos/4.jpg"
-                    aria-label="Open photo 4"
-                >
-                    <img
-                        src="/assets/phf-photos/4.jpg"
-                        alt="Photo 4"
-                        loading="lazy"
-                    />
-                </button>
-                <button
-                    class="card"
-                    data-full="/assets/phf-photos/5.jpg"
-                    aria-label="Open photo 5"
-                >
-                    <img
-                        src="/assets/phf-photos/5.jpg"
-                        alt="Photo 5"
-                        loading="lazy"
-                    />
-                </button>
-                <button
-                    class="card"
-                    data-full="/assets/phf-photos/6.jpg"
-                    aria-label="Open photo 6"
-                >
-                    <img
-                        src="/assets/phf-photos/6.jpg"
-                        alt="Photo 6"
-                        loading="lazy"
-                    />
-                </button>
-                <button
-                    class="card"
-                    data-full="/assets/phf-photos/7.jpg"
-                    aria-label="Open photo 7"
-                >
-                    <img
-                        src="/assets/phf-photos/7.jpg"
-                        alt="Photo 7"
-                        loading="lazy"
-                    />
-                </button>
-                <button
-                    class="card"
-                    data-full="/assets/phf-photos/8.jpg"
-                    aria-label="Open photo 8"
-                >
-                    <img
-                        src="/assets/phf-photos/8.jpg"
-                        alt="Photo 8"
-                        loading="lazy"
-                    />
-                </button>
-                <button
-                    class="card"
-                    data-full="/assets/phf-photos/9.jpg"
-                    aria-label="Open photo 9"
-                >
-                    <img
-                        src="/assets/phf-photos/9.jpg"
-                        alt="Photo 9"
-                        loading="lazy"
-                    />
-                </button>
-                <button
-                    class="card"
-                    data-full="/assets/phf-photos/10.jpg"
-                    aria-label="Open photo 10"
-                >
-                    <img
-                        src="/assets/phf-photos/10.jpg"
-                        alt="Photo 10"
-                        loading="lazy"
-                    />
-                </button>
-                <button
-                    class="card"
-                    data-full="/assets/phf-photos/11.jpg"
-                    aria-label="Open photo 11"
-                >
-                    <img
-                        src="/assets/phf-photos/11.jpg"
-                        alt="Photo 11"
-                        loading="lazy"
-                    />
-                </button>
-            </main>
-        </div>
-
-        <!-- Gallery Overlay -->
-        <div class="lightbox" id="lightbox" aria-hidden="true">
-            <div class="lightbox__backdrop" data-close></div>
-
-            <figure
-                class="lightbox__panel"
-                role="dialog"
-                aria-modal="true"
-                aria-label="Image preview"
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/noty0urmuse/" target="_blank" rel="noopener noreferrer"
+            ><svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-                <button
-                    class="lightbox__close"
-                    type="button"
-                    aria-label="Close"
-                    data-close
-                >
-                    ✕
-                </button>
+              <path
+                d="M5.22 0H12.78C15.66 0 18 2.34 18 5.22V12.78C18 14.1644 17.45 15.4922 16.4711 16.4711C15.4922 17.45 14.1644 18 12.78 18H5.22C2.34 18 0 15.66 0 12.78V5.22C0 3.83557 0.549963 2.50784 1.5289 1.5289C2.50784 0.549963 3.83557 0 5.22 0ZM5.04 1.8C4.1807 1.8 3.35659 2.14136 2.74897 2.74897C2.14136 3.35659 1.8 4.1807 1.8 5.04V12.96C1.8 14.751 3.249 16.2 5.04 16.2H12.96C13.8193 16.2 14.6434 15.8586 15.251 15.251C15.8586 14.6434 16.2 13.8193 16.2 12.96V5.04C16.2 3.249 14.751 1.8 12.96 1.8H5.04ZM13.725 3.15C14.0234 3.15 14.3095 3.26853 14.5205 3.4795C14.7315 3.69048 14.85 3.97663 14.85 4.275C14.85 4.57337 14.7315 4.85952 14.5205 5.07049C14.3095 5.28147 14.0234 5.4 13.725 5.4C13.4266 5.4 13.1405 5.28147 12.9295 5.07049C12.7185 4.85952 12.6 4.57337 12.6 4.275C12.6 3.97663 12.7185 3.69048 12.9295 3.4795C13.1405 3.26853 13.4266 3.15 13.725 3.15ZM9 4.5C10.1935 4.5 11.3381 4.97411 12.182 5.81802C13.0259 6.66193 13.5 7.80653 13.5 9C13.5 10.1935 13.0259 11.3381 12.182 12.182C11.3381 13.0259 10.1935 13.5 9 13.5C7.80653 13.5 6.66193 13.0259 5.81802 12.182C4.97411 11.3381 4.5 10.1935 4.5 9C4.5 7.80653 4.97411 6.66193 5.81802 5.81802C6.66193 4.97411 7.80653 4.5 9 4.5ZM9 6.3C8.28392 6.3 7.59716 6.58446 7.09081 7.09081C6.58446 7.59716 6.3 8.28392 6.3 9C6.3 9.71608 6.58446 10.4028 7.09081 10.9092C7.59716 11.4155 8.28392 11.7 9 11.7C9.71608 11.7 10.4028 11.4155 10.9092 10.9092C11.4155 10.4028 11.7 9.71608 11.7 9C11.7 8.28392 11.4155 7.59716 10.9092 7.09081C10.4028 6.58446 9.71608 6.3 9 6.3Z"
+                fill="#121213"
+              />
+            </svg>
+          </a>
 
-                <img class="lightbox__img" id="lightboxImg" alt="" />
-            </figure>
+          <!-- Mail -->
+          <a href="#" class="email-icon" data-email=""
+            ><svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.2 18C1.595 18 1.07727 17.7799 0.6468 17.3396C0.216333 16.8994 0.000733333 16.3695 0 15.75V2.25C0 1.63125 0.2156 1.10175 0.6468 0.6615C1.078 0.22125 1.59573 0.00075 2.2 0H19.8C20.405 0 20.9231 0.2205 21.3543 0.6615C21.7855 1.1025 22.0007 1.632 22 2.25V15.75C22 16.3687 21.7848 16.8986 21.3543 17.3396C20.9238 17.7806 20.4057 18.0007 19.8 18H2.2ZM19.8 4.5L11.5775 9.75937C11.4858 9.81562 11.3898 9.858 11.2893 9.8865C11.1888 9.915 11.0924 9.92887 11 9.92812C10.9076 9.92737 10.8115 9.9135 10.7118 9.8865C10.6121 9.8595 10.5156 9.81712 10.4225 9.75937L2.2 4.5V15.75H19.8V4.5ZM11 7.875L19.8 2.25H2.2L11 7.875ZM2.2 4.78125V3.12187V3.15V3.1365V4.78125Z"
+                fill="#121213"
+              />
+            </svg>
+          </a>
+
+          <!-- Kofi -->
+          <a href="https://ko-fi.com/notyourmuse" target="_blank" rel="noopener noreferrer"
+            ><svg
+              width="23"
+              height="18"
+              viewBox="0 0 23 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.878 0C8.29054 0 6.09979 0.0242326 4.33262 0.252019C1.99142 0.552504 0 2.36414 0 5.71405C0 9.11244 0.174417 11.6559 1.51896 13.9464C3.03696 16.5645 5.57558 18 8.86171 18H9.65712C13.6907 18 15.8805 15.8346 16.9759 14.1228C17.4247 13.419 17.7765 12.6565 18.0215 11.8565C20.884 11.6055 23 9.21325 23 6.2937V5.89144C23 2.7441 20.9587 0.553474 17.4493 0.201616C15.9562 0.0504041 14.9097 0 10.878 0ZM10.878 1.88724C14.9107 1.88724 15.756 1.93764 17.1753 2.06365C19.6899 2.3651 21.1332 3.59903 21.1332 5.94087V6.3189C21.1332 8.40872 19.4158 10.0449 17.4244 10.0449H16.5284L16.3789 10.674C16.1795 11.6559 15.8067 12.4362 15.3832 13.1418C14.512 14.526 12.9442 16.1118 9.70792 16.1118H8.93646C6.47258 16.1118 4.30675 15.2559 3.11171 13.0149C2.06712 11.0763 1.86779 8.9874 1.86779 5.73926C1.86779 3.6252 2.68908 2.44168 4.75429 2.13926C6.22342 1.91341 8.165 1.88724 10.878 1.88724ZM17.1523 4.10404C16.7536 4.10404 16.5293 4.33086 16.5293 4.63328V7.47819C16.5293 7.77964 16.7536 8.00646 17.1523 8.00646C18.4211 8.00646 19.1178 7.27561 19.1178 6.06785C19.1178 4.8601 18.4211 4.10404 17.1513 4.10404M7.19421 4.28045C5.45196 4.28045 4.30675 5.71502 4.30675 7.32601C4.30675 8.81195 5.129 10.0953 6.17454 11.1034C6.87125 11.7829 7.96662 12.4885 8.71317 12.9412C8.93149 13.073 9.18101 13.1426 9.43527 13.1426C9.68953 13.1426 9.93906 13.073 10.1574 12.9412C10.9049 12.4885 11.9993 11.7829 12.6711 11.1034C13.7415 10.0963 14.5628 8.81195 14.5628 7.32601C14.5628 5.71502 13.3678 4.28045 11.6505 4.28045C10.6298 4.28045 9.93313 4.80872 9.40988 5.53861C8.93742 4.80872 8.21579 4.28045 7.19421 4.28045Z"
+                fill="#121213"
+              />
+            </svg>
+          </a>
         </div>
+      </nav>
+      <main class="gallery" id="gallery">
+        <button
+          class="card"
+          data-full="/assets/phf-photos/1.jpg"
+          data-title="Steps in grass"
+          aria-label="Open photo 1"
+        >
+          <img src="/assets/phf-photos/1.jpg" alt="Photo 1" loading="lazy" />
+        </button>
 
-        <!-- Copyright -->
-        <p class="copyright">
-            Copyright ©
-            <a
-                href="https://github.com/marija-kovacki"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Marija Kovački</a
-            >, 2026. All rights reserved.
-        </p>
+        <button
+          class="card"
+          data-full="/assets/phf-photos/2.jpg"
+          data-title="Neighbour"
+          aria-label="Open photo 2"
+        >
+          <img src="/assets/phf-photos/2.jpg" alt="Photo 2" loading="lazy" />
+        </button>
 
-        <script type="module" src="./src/main.js"></script>
-    </body>
+        <button
+          class="card"
+          data-full="/assets/phf-photos/3.jpg"
+          data-title="Old building with balconies"
+          aria-label="Open photo 3"
+        >
+          <img src="/assets/phf-photos/3.jpg" alt="Photo 3" loading="lazy" />
+        </button>
+
+        <button
+          class="card"
+          data-full="/assets/phf-photos/4.jpg"
+          data-title="Swan"
+          aria-label="Open photo 4"
+        >
+          <img src="/assets/phf-photos/4.jpg" alt="Photo 4" loading="lazy" />
+        </button>
+        <button
+          class="card"
+          data-full="/assets/phf-photos/5.jpg"
+          data-title="Dog"
+          aria-label="Open photo 5"
+        >
+          <img src="/assets/phf-photos/5.jpg" alt="Photo 5" loading="lazy" />
+        </button>
+        <button
+          class="card"
+          data-full="/assets/phf-photos/6.jpg"
+          data-title="Diptih-water bottle"
+          aria-label="Open photo 6"
+        >
+          <img src="/assets/phf-photos/6.jpg" alt="Photo 6" loading="lazy" />
+        </button>
+        <button
+          class="card"
+          data-full="/assets/phf-photos/7.jpg"
+          data-title="Diptih-flowers"
+          aria-label="Open photo 7"
+        >
+          <img src="/assets/phf-photos/7.jpg" alt="Photo 7" loading="lazy" />
+        </button>
+        <button
+          class="card"
+          data-full="/assets/phf-photos/8.jpg"
+          data-title="Old motel"
+          aria-label="Open photo 8"
+        >
+          <img src="/assets/phf-photos/8.jpg" alt="Photo 8" loading="lazy" />
+        </button>
+        <button
+          class="card"
+          data-full="/assets/phf-photos/9.jpg"
+          data-title="Snowy hills"
+          aria-label="Open photo 9"
+        >
+          <img src="/assets/phf-photos/9.jpg" alt="Photo 9" loading="lazy" />
+        </button>
+        <button
+          class="card"
+          data-full="/assets/phf-photos/10.jpg"
+          data-title="No dial tone"
+          aria-label="Open photo 10"
+        >
+          <img src="/assets/phf-photos/10.jpg" alt="Photo 10" loading="lazy" />
+        </button>
+        <button
+          class="card"
+          data-full="/assets/phf-photos/11.jpg"
+          data-title="Sisters"
+          aria-label="Open photo 11"
+        >
+          <img src="/assets/phf-photos/11.jpg" alt="Photo 11" loading="lazy" />
+        </button>
+      </main>
+    </div>
+
+    <!-- Gallery Overlay -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div class="lightbox__backdrop" data-close></div>
+
+      <figure class="lightbox__panel" role="dialog" aria-modal="true" aria-label="Image preview">
+        <button class="lightbox__close" type="button" aria-label="Close" data-close>✕</button>
+
+        <img class="lightbox__img" id="lightboxImg" alt="" />
+      </figure>
+    </div>
+
+    <!-- Copyright -->
+    <p class="copyright">
+      Copyright ©
+      <a href="https://github.com/marija-kovacki" target="_blank" rel="noopener noreferrer"
+        >Marija Kovački</a
+      >, 2026. All rights reserved.
+    </p>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
