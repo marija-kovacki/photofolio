@@ -1,0 +1,274 @@
+:root {
+  --white: #fcfbfb;
+  --black: #121213;
+  --red: #ff6464;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+  background: var(--white);
+  color: var(--black);
+  line-height: 1;
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+#page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0.98);
+  animation: zoomIn 0.5s ease-out forwards;
+}
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem 2.5rem;
+  box-shadow: 0 1px 2px #cacaca;
+  background-color: var(--white);
+}
+
+nav h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+nav .nav-content {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 3rem;
+}
+
+@media (max-width: 900px) {
+  nav {
+    position: static;
+    flex-direction: column;
+  }
+
+  nav h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+
+  nav .nav-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  padding: 32px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  position: relative;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: zoom-in;
+  border-radius: 10px;
+  overflow: hidden;
+  outline: none;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transform: scale(1);
+  transition:
+    transform 160ms ease,
+    filter 160ms ease;
+}
+
+.card::after {
+  content: 'view';
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(0, 0, 0, 0.22);
+  opacity: 0;
+  transition: opacity 160ms ease;
+}
+
+.card:hover img {
+  transform: scale(1.02);
+  filter: contrast(1.02);
+}
+.card:hover::after {
+  opacity: 1;
+}
+
+.card:focus-visible {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
+}
+
+/* Gallery overlay */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 9999;
+}
+
+.lightbox.is-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.lightbox__panel {
+  position: relative;
+  z-index: 1;
+  max-width: min(92vw, 1100px);
+  max-height: 86vh;
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #111;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+}
+
+.lightbox__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 86vh;
+  object-fit: contain;
+  background: #111;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  border: 0;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.lightbox__close:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/* About page */
+#page .about {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 0 3rem;
+}
+
+#page .about img {
+  width: 300px;
+  border: 4px solid rgb(215, 208, 178);
+}
+
+#page .about p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+#page .about p a,
+p.copyright a {
+  font-size: 1.2rem;
+  text-transform: lowercase;
+}
+
+@media (max-width: 900px) {
+  #page .about {
+    flex-direction: column;
+  }
+
+  #page .about img {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  #page .about p {
+    padding: 1rem;
+  }
+}
+
+p.copyright {
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.9rem;
+  text-wrap: wrap;
+}
+
+p.copyright a {
+  font-size: 0.9rem;
+}
