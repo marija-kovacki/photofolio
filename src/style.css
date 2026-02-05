@@ -230,12 +230,6 @@ nav .nav-content .icons {
   .gallery {
     grid-template-columns: 1fr;
   }
-
-  .lightbox__close {
-    width: 20px;
-    height: 20px;
-    font-size: 10px;
-  }
 }
 /* About page */
 #page .about {
