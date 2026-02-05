@@ -269,6 +269,7 @@ p.copyright a {
 
   #page .about p {
     padding: 1rem;
+    text-align: justify;
   }
 }
 
