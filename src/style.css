@@ -93,12 +93,17 @@ nav .nav-content .icons {
   nav h1 {
     font-size: 1.8rem;
     text-align: center;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
   }
 
   nav .nav-content {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  nav .nav-content .icons {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
 
