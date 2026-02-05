@@ -84,7 +84,7 @@ document.addEventListener('keydown', (e) => {
 // Email obfuscation to protect from spam bots
 ;(function protectEmails() {
   // Obfuscated email (base64 encoded: "noty0urmuse@proton.me")
-  const encodedEmail = 'bm90eTB1cm11c0Bwcm90b24ubWU='
+  const encodedEmail = 'bm90eTB1cm11c2VAcHJvdG9uLm1l'
 
   // Decode base64
   const decodeEmail = (encoded) => {
