@@ -235,6 +235,7 @@ nav .nav-content .icons {
 #page .about {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   max-width: 900px;
   margin: 0 auto;
@@ -242,8 +243,10 @@ nav .nav-content .icons {
 }
 
 #page .about img {
-  width: 300px;
+  width: auto;
+  height: 300px;
   border: 4px solid rgb(215, 208, 178);
+  object-fit: contain;
 }
 
 #page .about p {
@@ -263,7 +266,8 @@ p.copyright a {
   }
 
   #page .about img {
-    width: 150px;
+    width: auto;
+    height: 150px;
     margin: 0 auto;
   }
 
