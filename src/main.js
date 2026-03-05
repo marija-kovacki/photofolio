@@ -5,6 +5,7 @@ const lightboxImg = document.getElementById('lightboxImg')
 let lastFocused = null
 
 function openLightbox(src, alt = '') {
+  if (!lightbox || !lightboxImg) return
   lastFocused = document.activeElement
 
   lightboxImg.src = src
@@ -17,25 +18,6 @@ function openLightbox(src, alt = '') {
 
   const closeBtn = lightbox.querySelector('[data-close]')
   closeBtn?.focus()
-
-  //Clicked image analytics
-  gallery.addEventListener('click', (e) => {
-    const card = e.target.closest('.card')
-    if (!card) return
-
-    const full = card.dataset.full
-    const title = card.dataset.title || 'unknown'
-
-    // Analytics event
-    if (window.gtag) {
-      gtag('event', 'photo_open', {
-        photo_title: title,
-      })
-    }
-
-    const img = card.querySelector('img')
-    openLightbox(full, img?.alt || '')
-  })
 }
 
 function closeLightbox() {
@@ -56,7 +38,16 @@ if (gallery) {
     if (!card) return
 
     const full = card.dataset.full || card.querySelector('img')?.src
+    const title = card.dataset.title || 'unknown'
     const img = card.querySelector('img')
+
+    if (window.gtag) {
+      gtag('event', 'photo_open', {
+        photo_title: title,
+        photo_index: [...gallery.querySelectorAll('.card')].indexOf(card),
+      })
+    }
+
     openLightbox(full, img?.alt || '')
   })
 }
