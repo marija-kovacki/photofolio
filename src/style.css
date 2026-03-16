@@ -230,8 +230,7 @@ nav .nav-content .icons {
 }
 
 @media (max-width: 900px) {
-  .gallery,
-  #blogPage ul {
+  .gallery {
     grid-template-columns: 1fr;
   }
 }
@@ -293,6 +292,12 @@ nav .nav-content .icons {
   margin: 0 0 0.5rem;
   font-size: 0.8rem;
   color: #1a3a1a;
+}
+
+@media (max-width: 900px) {
+  #blogPage ul {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Blog text page */
