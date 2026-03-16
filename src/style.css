@@ -23,7 +23,9 @@ body {
   font-family: 'Darker Grotesque', sans-serif;
 }
 
-#page {
+#homePage,
+#aboutPage,
+#blogPage {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -232,7 +234,7 @@ nav .nav-content .icons {
   }
 }
 /* About page */
-#page .about {
+#aboutPage .about {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,36 +244,36 @@ nav .nav-content .icons {
   padding: 5rem 0 3rem;
 }
 
-#page .about img {
+#aboutPage .about img {
   width: auto;
   height: 300px;
   border: 4px solid rgb(215, 208, 178);
   object-fit: contain;
 }
 
-#page .about p {
+#aboutPage .about p {
   font-size: 1.2rem;
   line-height: 2rem;
 }
 
-#page .about p a,
+#aboutPage .about p a,
 p.copyright a {
   font-size: 1.2rem;
   text-transform: lowercase;
 }
 
 @media (max-width: 900px) {
-  #page .about {
+  #aboutPage .about {
     flex-direction: column;
   }
 
-  #page .about img {
+  #aboutPage .about img {
     width: auto;
     height: 150px;
     margin: 0 auto;
   }
 
-  #page .about p {
+  #aboutPage .about p {
     padding: 1rem;
     text-align: justify;
   }
